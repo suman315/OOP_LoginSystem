@@ -39,7 +39,7 @@ if(mail($email, $subject, $message , $headers )){
   function redirect(){
   	setInterval(function(){window.location='./login.php'},3000);
   }
-  document.write(redirect());
+  redirect();
   </script>";
 }
 else{

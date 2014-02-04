@@ -39,16 +39,19 @@ if(preg_match('/^[A-Za-z0-9]+$/', $user)){
 			if($activation_check == 1){
 			
 				echo " you have sucessfully activated your account please login using your username <b> $user </b> and password";
+				$connection->close();
 				echo "<script> function goToLogin(){ setTimeout( function(){window.location = './login.php'; }, 3000)}";
 				echo "goToLogin(); </script>";
 
 			}
 			else{
 				echo "there has been an error during activation";
+				$connection->close();
 			}
 		}
 		else{
 			echo "provided user name or code is not correct /n hello";
+			$connection->close();
 		}
 
 	}

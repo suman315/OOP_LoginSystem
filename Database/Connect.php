@@ -10,11 +10,6 @@ $connect = new \mysqli("$this->db_host","$this->db_username","$this->db_password
 return $connect;
 }
 }
-// $con = new Connect;
-// $abc = $con->connection();
-// $result = $abc->query("insert into user (`username`) values ('aaaaa')") or die("couldnt success");
-// var_dump($result);
-// if($abc){
-// 	echo "connected";
-// }
+
+// don't forget to change the $site variable on other pages and put your website name there like http://dev.sumanpoudel.com 
 ?>

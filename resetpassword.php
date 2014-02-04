@@ -31,7 +31,7 @@ if ($rows == 1){
   function redirect(){
   	setInterval(function(){window.location='./login.php'},3000);
   }
-  document.write(redirect());
+  redirect();
   </script>";
 		}
 

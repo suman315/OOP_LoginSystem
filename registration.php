@@ -85,7 +85,7 @@ if ($email_ckeck_row==1){
   function redirect(){
     setInterval(function(){window.location='./login.php'},3000);
   }
-  document.write(redirect());
+  redirect();
   </script>";
     
 }else{
@@ -109,7 +109,7 @@ if(mail($email, $subject, $message , $headers )){
   unset($password2);
   unset($phonenumber);
   unset($email);
-
+  $connection->close();
   //redirecting to login page
   echo "<script> goToLogin(); </script>";
 }
